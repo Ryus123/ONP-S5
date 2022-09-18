@@ -112,3 +112,13 @@ d1 = d + temps1
 #print(d1)
 
 ###3. À l’aide de la fonction appropriée, afficher la date du jour
+#print("Aujourd'hui nous sommes le : ", datetime.today())
+
+###4. Calculer la différence en jour entre la date du jour et d1. Stocker ce résultat dans une variable que vous appellerez duree. Afficher le résultat puis le type de l’objet
+
+duree= (datetime.today() - d1)
+
+#print(duree / timedelta(days=1), type(duree))
+
+###5. Afficher cette différence en secondes.
+print(duree.total_seconds(), type(duree))
