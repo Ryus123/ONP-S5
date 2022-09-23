@@ -121,4 +121,4 @@ duree= (datetime.today() - d1)
 #print(duree / timedelta(days=1), type(duree))
 
 ###5. Afficher cette différence en secondes.
-print(duree.total_seconds(), type(duree))
+#print(duree.total_seconds(), type(duree))
