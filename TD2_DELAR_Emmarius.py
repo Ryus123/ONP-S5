@@ -68,14 +68,34 @@ def ext_array():
 ###1. Créer la matrice A
 
 a = np.array([[-3, 5, 6],[-1, 2, 2], [1, -1, -1]])
-print(a)
+#print(a)
 
 ###2.  Afficher la dimension de 𝐴, son nombre de colonnes, son nombre de lignes et sa longueur.
-print("La matrice A possède {} colonnes, {} lignes et, est de longueur {}".format(a.shape[0], a.shape[1], a.size))
+#print("La matrice A possède {} colonnes, {} lignes et, est de longueur {}".format(a.shape[0], a.shape[1], a.size))
 
 ###3. Extraire la seconde colonne de 𝐴, puis la première ligne.
-print(a[0,1])
+#print(a[0,1])
 
 ###4. Extraire la sous-matrice de dimension 2×2 du coin inférieur de A
-print("")
+A2 = np.array([a[1, 1:],a[2,1:]])
+#print(A2)
 
+###5.  Calculer la somme des colonnes puis des lignes de A
+#print("La somme des colonnes de A vaut : {} et la somme des lignes de A vaut : {}".format(np.sum(a, axis=0), np.sum(a, axis=1 )))
+
+###6.  Afficher la diagonale de A
+#print("La diagonale de A est : {}".format(np.diag(a)))
+
+###7.  Rajouter le vecteur transposer [1 2 3] à droite de la matrice 𝐴 et stocker le résultat dans un objet appelé B
+b = np.array( [np.append(a[0], 1),np.append(a[1], 2),np.append(a[2], 3)] )
+#print(b)
+
+###8.  Retirer le quatrième vecteur de B
+#print(b[0:,:3])
+
+###9.  Retirer la première et la troisième ligne de B
+#print(b[1])
+
+###10. Ajouter le scalaire 10 à A
+a+= 10
+print(a)
