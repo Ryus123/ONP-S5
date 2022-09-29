@@ -77,7 +77,7 @@ a = np.array([[-3, 5, 6],[-1, 2, 2], [1, -1, -1]])
 #print(a[0,1])
 
 ###4. Extraire la sous-matrice de dimension 2×2 du coin inférieur de A
-A2 = np.array([a[1, 1:],a[2,1:]])
+#A2 = np.array([a[1, 1:],a[2,1:]])
 #print(A2)
 
 ###5.  Calculer la somme des colonnes puis des lignes de A
@@ -98,4 +98,24 @@ b = np.array( [np.append(a[0], 1),np.append(a[1], 2),np.append(a[2], 3)] )
 
 ###10. Ajouter le scalaire 10 à A
 a+= 10
-print(a)
+#print(a)
+
+###11. Ajouter le vecteur [1 2 3]^T à A
+a = a + np.transpose([1,2,3])
+#print(a)
+
+###12.  Ajouter la matrice identité 𝐼3 à A
+a = a+ np.eye(3)
+#print(a)
+
+###13.  Diviser tous les éléments de la matrice 𝐴 par 2
+#print(a/2)
+
+###14. Multiplier la matrice 𝐴 par le vecteur ligne [1 2 3]
+#print(a*np.array([1,2,3]))
+
+###15.  Afficher la transposée de A
+#print(a.transpose())
+
+###16.  Effectuer le produit avec transposition (𝐴^T)*A
+#print(a.transpose()*a)
