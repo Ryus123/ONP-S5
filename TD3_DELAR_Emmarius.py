@@ -35,7 +35,10 @@ df = pd.DataFrame(Donnees)
 #7. Compléter pour la variable Age
 #print(np.round(df["Age"].describe(), decimals=2))
 
+#8. Quel est l’âge de la plus jeune femme ayant moins de 2 enfants (inclus) ?
+#df2 = df.dropna(subset=["Age", "ChildrenNumber"])
+#print(df2[df2.Gender=="female"].sort_values(by=["Age", "ChildrenNumber"], ascending=[True, True]).head(1))
 
-
-
-
+#9. Trier le tableau de données par âge croissant et par revenu décroissant. Quel est le niveau d’étude du 30ème individu présent dans le tableau trié ?
+#df3 = df.dropna(subset=["Age", "Income"])
+#print("Le niveau d'étude du 30è individu est : ",df.sort_values(by=["Age", "Income"], ascending=[True, False])["SchoolDegree"].iloc[29])
