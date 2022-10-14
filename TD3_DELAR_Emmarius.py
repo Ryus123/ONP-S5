@@ -13,7 +13,7 @@ v4 = np.arange(28,11, -2)
 
 ###Exercice 2
 #3. Charger ce fichier en utilisant les fonctionnalités de pandas.
-chemin1 = os.getcwd()+"/DataTD/Enquete_prog.csv"
+chemin1 = os.getcwd()+"/DataTD/DataTD3/Enquete_prog.csv"
 chemin2 = os.getcwd()+"/Data/Enquete_prog.csv"
 
 try:
