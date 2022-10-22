@@ -1,4 +1,4 @@
-import numpy as np
-a = 2*np.ones(300)
-a[3]= np.nan
-print(a)
+if 20 in range(13):
+    print("yes")
+else:
+    print("non")

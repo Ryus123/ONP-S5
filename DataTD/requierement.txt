@@ -1,0 +1,10 @@
+contourpy
+cycler
+dateutil
+fontTools
+kiwisolver
+NumPy
+packaging
+Pillow
+pyparsing
+setuptools
